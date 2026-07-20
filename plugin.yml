@@ -1,0 +1,14 @@
+name: AetherMarket
+version: 1.0.0
+main: com.aethermarket.AetherMarket
+api-version: '1.20'
+author: onitechz
+description: Premium Auction House & Player Market with Custom Items
+commands:
+  market:
+    description: Open the Aether Market
+    aliases: [ah, auction, aether]
+    permission: aethermarket.use
+  aetheradmin:
+    description: Admin commands
+    permission: aethermarket.admin
