@@ -1,13 +1,13 @@
 package com.aethermarket;
 
+import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
-import org.bukkit.Material;
+import org.bukkit.plugin.java.JavaPlugin;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,7 +34,7 @@ public final class AetherMarket extends JavaPlugin implements CommandExecutor {
         }
 
         if (command.getName().equalsIgnoreCase("market")) {
-            // Demo: Give a custom item as proof of concept
+            // Demo custom item
             ItemStack customItem = new ItemStack(Material.DIAMOND_SWORD);
             ItemMeta meta = customItem.getItemMeta();
             
@@ -50,7 +50,7 @@ public final class AetherMarket extends JavaPlugin implements CommandExecutor {
 
             player.getInventory().addItem(customItem);
             player.sendMessage("§a§lWelcome to AetherMarket!");
-            player.sendMessage("§7A premium auction & shop system is active.");
+            player.sendMessage("§7Premium auction system ready.");
             return true;
         }
 
